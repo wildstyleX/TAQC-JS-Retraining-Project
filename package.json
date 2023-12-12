@@ -1,0 +1,14 @@
+{
+  "name": "taqc-js-retraining-project",
+  "version": "1.0.0",
+  "description": "- decide the API and web page to write tests\r - create GitHub project\r - write tasks for the first week",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.40.1",
+    "@types/node": "^20.10.4"
+  }
+}
