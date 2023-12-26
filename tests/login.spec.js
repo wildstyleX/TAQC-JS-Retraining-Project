@@ -42,6 +42,13 @@ test('login with performance glitch user', async ({ page }) => {
     await dashboardPage.verifyPageHeader()
 });
 
+test('login with non-existing user', async ({ page }) => {
+    const loginPage = new LoginPage(page)
+    await loginPage.login('1', '1')
+    const message = 'Epic sadface: Username and password do not match any user in this service'
+    await loginPage.verifyError(message)
+});
+
 test('logout', async ({ page }) => {
     const loginPage = new LoginPage(page)
     await loginPage.login('standard_user', 'secret_sauce')
